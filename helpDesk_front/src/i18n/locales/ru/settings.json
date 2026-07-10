@@ -1,0 +1,53 @@
+{
+  "page": {
+    "title": "Настройки",
+    "description": "Данные берутся из бэкенда (`/users/me`) и сверяются с Keycloak.",
+    "aria": "Настройки профиля"
+  },
+  "actions": {
+    "groupAria": "Действия",
+    "refresh": "Обновить",
+    "refreshAria": "Обновить профиль",
+    "logout": "Выйти",
+    "logoutAria": "Выйти из системы"
+  },
+  "loading": "Загружаем профиль...",
+  "loadFailed": "Не удалось загрузить профиль",
+  "unknownError": "Неизвестная ошибка",
+  "sections": {
+    "main": {
+      "title": "Основное",
+      "description": "Данные пользователя из бэкенда"
+    },
+    "roles": {
+      "title": "Роли",
+      "description": "Роли пользователя из базы (user_roles)",
+      "none": "Роли не назначены",
+      "departmentSuffix": "(департамент {{id}})"
+    },
+    "service": {
+      "title": "Служебная информация",
+      "description": "Для отладки и сверки с Keycloak"
+    }
+  },
+  "fields": {
+    "fullName": "ФИО",
+    "email": "Email",
+    "keycloakId": "Keycloak ID",
+    "adUsername": "AD username",
+    "phone": "Телефон",
+    "position": "Должность",
+    "departmentId": "Department ID",
+    "emailVerified": "Почта подтверждена",
+    "emailVerifiedYes": "Да",
+    "emailVerifiedNo": "Нет",
+    "createdAt": "Создан",
+    "updatedAt": "Обновлён",
+    "lastSync": "Последняя синхронизация",
+    "status": "Статус",
+    "statusActive": "Активен",
+    "statusInactive": "Деактивирован",
+    "tokenEmail": "Token email",
+    "tokenUsername": "Token username"
+  }
+}

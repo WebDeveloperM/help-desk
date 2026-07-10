@@ -1,0 +1,138 @@
+{
+  "page": {
+    "title": "Bo'limlar",
+    "description": "Tashkilot bo'limlarini boshqarish",
+    "aria": "Bo'limlar sahifasi"
+  },
+  "actions": {
+    "create": "Bo'lim yaratish",
+    "filter": "Filtrlar",
+    "search": "Bo'lim nomi yoki kodi bo'yicha qidirish...",
+    "searchAria": "Bo'lim nomi yoki kodi bo'yicha qidirish",
+    "editAria": "{{name}}ni tahrirlash",
+    "deleteAria": "{{name}}ni o'chirish",
+    "openAria": "{{name}}ni ochish",
+    "moreAria": "{{name}} uchun qo'shimcha amallar",
+    "save": "Saqlash",
+    "cancel": "Bekor qilish",
+    "delete": "O'chirish",
+    "close": "Yopish"
+  },
+  "stats": {
+    "title": "Bo'limlar statistikasi",
+    "total": "Jami bo'limlar",
+    "active": "Faol",
+    "employees": "Xodimlar",
+    "perMonth": "bir oyda"
+  },
+  "list": {
+    "title": "Bo'limlar ro'yxati",
+    "description": "Tashkilotning barcha bo'limlari",
+    "tableAria": "Bo'limlar ro'yxati",
+    "empty": "Bo'limlar topilmadi",
+    "loading": "Yuklanmoqda...",
+    "columns": {
+      "number": "№",
+      "name": "Nomi",
+      "code": "Kod",
+      "head": "Rahbar",
+      "employees": "Xodimlar",
+      "status": "Holati",
+      "actions": "Amallar"
+    },
+    "status": {
+      "active": "Faol",
+      "inactive": "Faol emas"
+    }
+  },
+  "dialog": {
+    "createTitle": "Yangi bo'lim",
+    "editTitle": "Bo'limni tahrirlash",
+    "numberHint": "#{{number}} raqami avtomatik beriladi",
+    "fields": {
+      "code": "Kod",
+      "codeHint": "Qisqa, takrorlanmas kod (masalan IT-01)",
+      "name": "Nomi",
+      "nameUz": "Nomi (o'zb.)",
+      "isActive": "Faol"
+    },
+    "errors": {
+      "codeRequired": "Kodni kiriting",
+      "nameRequired": "Nomni kiriting"
+    }
+  },
+  "delete": {
+    "title": "Bo'lim o'chirilsinmi?",
+    "body": "«{{name}}» (#{{number}}) bo'limi o'chiriladi. Xodimlarning «Bo'lim» maydoni tozalanadi. Bu amalni qaytarib bo'lmaydi.",
+    "confirm": "O'chirish"
+  },
+  "drawer": {
+    "title": "Bo'lim #{{number}}",
+    "tabUsers": "Xodimlar",
+    "tabSettings": "Sozlamalar",
+    "addEmployee": "Xodim qo'shish",
+    "removeFromDepartment": "Bo'limdan olib tashlash",
+    "removeAria": "{{name}}ni bo'limdan olib tashlash",
+    "resetPassword": "Parolni tiklash",
+    "resetPasswordAria": "{{name}} uchun parolni tiklash",
+    "noUsers": "Bo'limda hozircha xodimlar yo'q"
+  },
+  "addEmployee": {
+    "title": "Xodim qo'shish",
+    "subtitle": "Mavjud xodimni toping yoki #{{number}} bo'lim uchun yangi hisob yarating",
+    "search": "Ism yoki email bo'yicha qidirish...",
+    "empty": "Hech kim topilmadi. Quyida yangi xodim yarating.",
+    "assign": "Biriktirish",
+    "createNew": "Yangi yaratish",
+    "backToSearch": "Qidirishga qaytish"
+  },
+  "removeUser": {
+    "title": "Xodimni olib tashlaymizmi?",
+    "body": "«{{name}}» xodimi «{{department}}» bo'limidan olib tashlanadi. Hisob qaydnomasi bo'limsiz holatda saqlanadi.",
+    "confirm": "Olib tashlash"
+  },
+  "resetPassword": {
+    "title": "Parolni tiklash",
+    "subtitle": "«{{name}}» foydalanuvchisi keyingi kirganda parolni o'zgartiradi.",
+    "fields": {
+      "password": "Yangi vaqtinchalik parol"
+    },
+    "submit": "Tiklash",
+    "successTitle": "Parol tiklandi",
+    "successBody": "Yangi vaqtinchalik parolni nusxalang — u faqat bir marta ko'rsatiladi."
+  },
+  "createUser": {
+    "title": "Foydalanuvchi yaratish",
+    "subtitle": "Foydalanuvchi Keycloak'da yaratiladi va #{{number}} bo'limga biriktiriladi",
+    "fields": {
+      "username": "Login",
+      "usernameHint": "Email'dan avtomatik to'ldiriladi — o'zgartirish mumkin",
+      "email": "Email",
+      "fullName": "To'liq ism",
+      "fullNameUz": "To'liq ism (o'zb.)",
+      "password": "Vaqtinchalik parol",
+      "passwordHint": "Kamida 8 belgi. Foydalanuvchi birinchi kirganda almashtiradi.",
+      "generate": "Yaratish",
+      "role": "Rol",
+      "position": "Lavozim",
+      "phone": "Telefon"
+    },
+    "roles": {
+      "user": "Foydalanuvchi",
+      "department_head": "Bo'lim rahbari",
+      "executor": "Ijrochi"
+    },
+    "submit": "Yaratish",
+    "successTitle": "Foydalanuvchi yaratildi",
+    "successBody": "Vaqtinchalik parolni nusxalang — u faqat bir marta ko'rsatiladi.",
+    "copy": "Nusxalash",
+    "copied": "Nusxalandi"
+  },
+  "assignUser": {
+    "title": "Foydalanuvchini biriktirish",
+    "subtitle": "Foydalanuvchi #{{number}} bo'limga o'tkaziladi",
+    "search": "Ism yoki email bo'yicha qidirish...",
+    "submit": "Biriktirish",
+    "empty": "Mos foydalanuvchi yo'q"
+  }
+}

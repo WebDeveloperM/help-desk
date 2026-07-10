@@ -1,0 +1,53 @@
+{
+  "page": {
+    "title": "Sozlamalar",
+    "description": "Ma'lumotlar backend'dan (`/users/me`) olinadi va Keycloak bilan solishtirildi.",
+    "aria": "Profil sozlamalari"
+  },
+  "actions": {
+    "groupAria": "Amallar",
+    "refresh": "Yangilash",
+    "refreshAria": "Profilni yangilash",
+    "logout": "Chiqish",
+    "logoutAria": "Tizimdan chiqish"
+  },
+  "loading": "Profil yuklanmoqda...",
+  "loadFailed": "Profilni yuklab bo'lmadi",
+  "unknownError": "Noma'lum xatolik",
+  "sections": {
+    "main": {
+      "title": "Asosiy",
+      "description": "Backend'dan foydalanuvchi ma'lumotlari"
+    },
+    "roles": {
+      "title": "Rollar",
+      "description": "Bazadan foydalanuvchi rollari (user_roles)",
+      "none": "Rollar tayinlanmagan",
+      "departmentSuffix": "(bo'lim {{id}})"
+    },
+    "service": {
+      "title": "Xizmat ma'lumotlari",
+      "description": "Keycloak bilan tuzatish va tekshirish uchun"
+    }
+  },
+  "fields": {
+    "fullName": "F.I.Sh.",
+    "email": "Email",
+    "keycloakId": "Keycloak ID",
+    "adUsername": "AD username",
+    "phone": "Telefon",
+    "position": "Lavozim",
+    "departmentId": "Bo'lim ID",
+    "emailVerified": "Email tasdiqlangan",
+    "emailVerifiedYes": "Ha",
+    "emailVerifiedNo": "Yo'q",
+    "createdAt": "Yaratilgan",
+    "updatedAt": "Yangilangan",
+    "lastSync": "Oxirgi sinxronizatsiya",
+    "status": "Holat",
+    "statusActive": "Faol",
+    "statusInactive": "Faol emas",
+    "tokenEmail": "Token email",
+    "tokenUsername": "Token username"
+  }
+}

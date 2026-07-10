@@ -1,0 +1,70 @@
+{
+  "page": {
+    "title": "Отчёты",
+    "description": "Аналитика и статистика по заявкам",
+    "aria": "Страница отчётов"
+  },
+  "actions": {
+    "exportCsv": "Экспорт CSV",
+    "exportCsvAria": "Экспортировать отчёт в CSV",
+    "print": "Печать",
+    "printAria": "Распечатать отчёт"
+  },
+  "state": {
+    "loading": "Загрузка аналитики…",
+    "errorTitle": "Не удалось загрузить аналитику",
+    "retry": "Повторить",
+    "emptyTitle": "Пока нет данных",
+    "emptyDescription": "Аналитика появится, как только в системе будут заявки."
+  },
+  "metric": {
+    "metric": "Метрика",
+    "value": "Значение"
+  },
+  "unit": {
+    "hours": "ч"
+  },
+  "kpi": {
+    "region": "Ключевые показатели",
+    "total": "Всего заявок",
+    "open": "Открыто",
+    "inProgress": "В работе",
+    "completed": "Выполнено",
+    "closed": "Закрыто",
+    "overdue": "Просрочено",
+    "urgentOpen": "Срочные в работе",
+    "avgResolution": "Средн. время решения",
+    "slaCompliance": "SLA соблюдение",
+    "createdLast7d": "Создано за 7 дней",
+    "completedLast7d": "Выполнено за 7 дней",
+    "createdLast7dHint": "+{{count}} за 7 дней",
+    "completedLast7dHint": "+{{count}} за 7 дней"
+  },
+  "charts": {
+    "byStatus": "Заявки по статусам",
+    "byPriority": "Заявки по приоритетам",
+    "byCategory": "Топ категорий",
+    "throughput": "Динамика за 14 дней",
+    "throughputDescription": "Создано и выполнено заявок по дням",
+    "created": "Создано",
+    "completed": "Выполнено",
+    "noData": "Нет данных"
+  },
+  "statuses": {
+    "draft": "Черновик",
+    "pending_approval": "На согласовании",
+    "rejected": "Отклонено",
+    "approved": "Согласовано",
+    "assigned": "Назначено",
+    "in_progress": "В работе",
+    "waiting_info": "Ожидает информации",
+    "completed": "Выполнено",
+    "closed": "Закрыто"
+  },
+  "priorities": {
+    "low": "Низкий",
+    "normal": "Обычный",
+    "high": "Высокий",
+    "urgent": "Срочный"
+  }
+}

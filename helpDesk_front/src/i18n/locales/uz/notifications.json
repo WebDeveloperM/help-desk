@@ -1,0 +1,32 @@
+{
+  "type": {
+    "ticket_created": {
+      "title": "Ariza #{{ticket_number}} yaratildi",
+      "body": "Yangi ariza: «{{title}}»."
+    },
+    "ticket_approved": {
+      "title": "Ariza #{{ticket_number}} tasdiqlandi",
+      "body": "Ariza tasdiqlandi."
+    },
+    "ticket_rejected": {
+      "title": "Ariza #{{ticket_number}} rad etildi",
+      "body": "Ariza rad etildi."
+    },
+    "ticket_assigned": {
+      "title": "Yangi vazifa tayinlandi: {{title}}",
+      "body": "Ariza #{{ticket_number}} sizga tayinlandi."
+    },
+    "ticket_completed": {
+      "title": "Ariza #{{ticket_number}} bajarildi",
+      "body": "Ariza yakunlandi."
+    },
+    "comment_added": {
+      "title": "Ariza #{{ticket_number}}ga yangi izoh",
+      "body": "«{{title}}» arizasiga izoh qo'shildi."
+    },
+    "status_changed": {
+      "title": "Ariza #{{ticket_number}} holati o'zgartirildi",
+      "body": "Yangi holat: «{{status}}»."
+    }
+  }
+}

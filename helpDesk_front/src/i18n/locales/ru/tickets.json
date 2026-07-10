@@ -1,0 +1,203 @@
+{
+  "status": {
+    "draft": "Черновик",
+    "pending_approval": "Ожидает одобрения",
+    "approved": "Одобрено",
+    "assigned": "Назначено",
+    "in_progress": "В процессе",
+    "waiting_info": "Ожидает информации",
+    "completed": "Выполнено",
+    "closed": "Закрыто",
+    "rejected": "Отклонено"
+  },
+  "priority": {
+    "low": "Низкий",
+    "normal": "Обычный",
+    "high": "Высокий",
+    "urgent": "Срочный"
+  },
+  "asset": {
+    "laptop": "Ноутбук",
+    "equipment": "Оборудование",
+    "component": "Компонент"
+  },
+  "progress": {
+    "aria": "Прогресс выполнения {{value}}%"
+  },
+  "shortStatus": {
+    "draft": "ЧЕРНОВИК",
+    "pending_approval": "НА УТВ.",
+    "approved": "УТВ.",
+    "assigned": "НАЗНАЧЕНО",
+    "in_progress": "В РАБОТЕ",
+    "waiting_info": "ОЖИД.",
+    "completed": "ВЫПОЛНЕНО",
+    "closed": "ЗАКРЫТО",
+    "rejected": "ОТКЛОНЕНО"
+  },
+  "shortPriority": {
+    "low": "НИЗ.",
+    "normal": "ОБЫЧ.",
+    "high": "ВЫС.",
+    "urgent": "СРОЧ."
+  },
+  "sla": {
+    "onTrack": "В рамках SLA",
+    "atRisk": "SLA под риском",
+    "overdue": "SLA просрочен",
+    "completedOnTime": "Закрыто в срок",
+    "completedLate": "Закрыто с просрочкой",
+    "short": {
+      "onTrack": "В СРОК",
+      "atRisk": "РИСК",
+      "overdue": "ПРОСР.",
+      "completedOnTime": "ВОВРЕМЯ",
+      "completedLate": "ОПОЗД."
+    }
+  },
+  "card": {
+    "aria": "Заявка {{number}}: {{title}}",
+    "urgentBadge": "СРОЧ"
+  },
+  "form": {
+    "title": "Создать новую заявку",
+    "subtitle": "Заполните форму для создания новой заявки. Все поля обязательны для заполнения.",
+    "formAria": "Форма создания заявки",
+    "success": {
+      "created": "Заявка успешно создана!",
+      "refresh": "Список заявок обновится автоматически."
+    },
+    "labels": {
+      "title": "Название заявки",
+      "description": "Описание",
+      "priority": "Приоритет",
+      "department": "Отдел исполнителей",
+      "category": "Категория",
+      "executors": "Исполнители",
+      "desiredCompletion": "Желаемая дата завершения",
+      "markUrgent": "Отметить как срочную заявку"
+    },
+    "placeholders": {
+      "title": "Введите название заявки",
+      "description": "Опишите детали заявки",
+      "priority": "Выберите приоритет",
+      "department": "Выберите отдел",
+      "category": "Выберите категорию"
+    },
+    "yourDepartment": "Ваш отдел",
+    "yourDepartmentNamed": "Ваш отдел — {{name}}",
+    "help": {
+      "executorOnly": "Назначение доступно только коллегам из выбранного отдела",
+      "selectDepartment": "Выберите отдел, чтобы загрузить список исполнителей",
+      "categoryLoading": "Загрузка категорий…",
+      "noCategories": "Нет доступных категорий. Обратитесь к администратору.",
+      "selectCategory": "Выберите категорию заявки",
+      "executorsHelp": "Выберите одного или нескольких исполнителей из выбранного отдела"
+    },
+    "executors": {
+      "loading": "Загрузка списка сотрудников отдела…",
+      "noUsers": "В выбранном отделе нет пользователей. Обратитесь к администратору.",
+      "assignAria": "Назначить {{name}}"
+    },
+    "actions": {
+      "create": "Создать заявку"
+    },
+    "errors": {
+      "noToken": "Нет токена авторизации",
+      "noDepartment": "Выберите отдел или обратитесь к администратору для привязки к отделу."
+    },
+    "validation": {
+      "titleMin": "Название должно содержать минимум 3 символа",
+      "titleMax": "Название не должно превышать 200 символов",
+      "descMin": "Описание должно содержать минимум 10 символов",
+      "descMax": "Описание не должно превышать 2000 символов",
+      "priorityRequired": "Выберите приоритет",
+      "departmentRequired": "Выберите отдел",
+      "categoryRequired": "Выберите категорию",
+      "executorsRequired": "Выберите хотя бы одного исполнителя"
+    }
+  },
+  "detail": {
+    "back": "Вернуться к дашборду",
+    "mainAria": "Детали заявки",
+    "loadingAria": "Загрузка заявки",
+    "loading": "Загрузка заявки...",
+    "noTicketId": "Не указан идентификатор заявки",
+    "retry": "Повторить",
+    "retryAria": "Повторить загрузку",
+    "notFound": "Заявка не найдена",
+    "urgent": "СРОЧНО",
+    "implementation": "Степень реализации",
+    "progressAria": "Прогресс: {{value}}%",
+    "actionsAria": "Действия по заявке",
+    "sections": {
+      "description": "Описание",
+      "commentsHistory": "Комментарии и история",
+      "approverComment": "Комментарий одобряющего",
+      "completionComment": "Комментарий при завершении",
+      "closedComment": "Комментарий при закрытии",
+      "noComments": "Комментариев пока нет",
+      "dates": "Даты",
+      "desiredCompletion": "Желаемая дата завершения",
+      "plannedSla": "Плановая дата по SLA",
+      "slaStatus": "Статус SLA",
+      "actualCompletion": "Фактическая дата завершения",
+      "createdAt": "Создано",
+      "updatedAt": "Обновлено",
+      "participants": "Участники",
+      "creator": "Создатель",
+      "assignedDepartment": "Назначенный отдел",
+      "approver": "Одобряющий",
+      "completedBy": "Завершил",
+      "executors": "Исполнители",
+      "additionalInfo": "Дополнительная информация",
+      "updateProgress": "Обновить прогресс",
+      "updateProgressDesc": "Укажите текущую степень реализации задачи",
+      "saveProgress": "Сохранить прогресс",
+      "saving": "Сохранение...",
+      "progressInputAria": "Процент выполнения заявки"
+    }
+  },
+  "actions": {
+    "approve": "Одобрить",
+    "approveAria": "Одобрить заявку",
+    "reject": "Отклонить",
+    "rejectAria": "Отклонить заявку",
+    "assign": "Назначить",
+    "assignAria": "Назначить заявку",
+    "startWork": "Начать работу",
+    "resumeWork": "Возобновить работу",
+    "waitingInfo": "Ожидание информации",
+    "complete": "Завершить",
+    "completeAria": "Завершить заявку",
+    "close": "Закрыть",
+    "closeAria": "Закрыть заявку"
+  },
+  "workflow": {
+    "modals": {
+      "approveTitle": "Одобрить заявку",
+      "approveDesc": "Добавьте комментарий при необходимости",
+      "rejectTitle": "Отклонить заявку",
+      "rejectDesc": "Укажите причину отклонения (обязательно)",
+      "rejectReasonLabel": "Причина отклонения",
+      "rejectReasonPlaceholder": "Введите причину",
+      "assignTitle": "Назначить заявку",
+      "assignDesc": "Выберите отдел и исполнителей",
+      "assignDepartmentLabel": "Отдел",
+      "assignExecutorsLabel": "Исполнители",
+      "assignExecutorAria": "Выбрать {{name}}",
+      "creatorDeptFallback": "Отдел автора заявки",
+      "completeTitle": "Завершить заявку",
+      "completeDesc": "Добавьте комментарий при необходимости",
+      "closeTitle": "Закрыть заявку",
+      "closeDesc": "Добавьте комментарий при необходимости",
+      "commentLabel": "Комментарий",
+      "commentOptionalPlaceholder": "Необязательно"
+    },
+    "errors": {
+      "rejectReasonRequired": "Укажите причину отклонения",
+      "departmentNotFound": "Не удалось определить отдел заявки",
+      "selectAtLeastOneExecutor": "Выберите хотя бы одного исполнителя"
+    }
+  }
+}

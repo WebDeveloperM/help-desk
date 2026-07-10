@@ -1,0 +1,238 @@
+{
+  "nav": {
+    "dashboard": "Дашборд",
+    "departments": "Отделы",
+    "users": "Пользователи",
+    "reports": "Отчёты",
+    "settings": "Настройки",
+    "navigationLabel": "Основная навигация",
+    "navigationHeading": "Навигация",
+    "short": {
+      "dashboard": "Лента",
+      "departments": "Отделы",
+      "reports": "Отчёты",
+      "settings": "Опции"
+    }
+  },
+  "users": {
+    "page": {
+      "aria": "Управление пользователями",
+      "title": "Пользователи",
+      "description": "Все пользователи, их роли, отделы и активность по задачам"
+    },
+    "actions": {
+      "create": "Создать пользователя",
+      "editAria": "Изменить {{name}}",
+      "resetPasswordAria": "Сбросить пароль {{name}}",
+      "deleteAria": "Удалить {{name}}"
+    },
+    "filters": {
+      "searchPlaceholder": "Поиск по имени, логину или email",
+      "searchAria": "Поиск пользователей",
+      "roleAria": "Фильтр по роли",
+      "departmentAria": "Фильтр по отделу",
+      "allRoles": "Все роли",
+      "allDepartments": "Все отделы",
+      "activeOnly": "Только активные"
+    },
+    "roles": {
+      "user": "Сотрудник",
+      "executor": "Исполнитель",
+      "department_head": "Руководитель отдела",
+      "admin": "Администратор"
+    },
+    "state": {
+      "loading": "Загрузка пользователей…",
+      "errorTitle": "Не удалось загрузить пользователей",
+      "retry": "Повторить",
+      "emptyTitle": "Пока нет пользователей",
+      "emptyDescription": "Создайте первого пользователя, чтобы начать работу.",
+      "noMatchesTitle": "Ничего не найдено",
+      "noMatchesDescription": "Измените поиск или фильтры."
+    },
+    "table": {
+      "aria": "Таблица пользователей",
+      "user": "Пользователь",
+      "email": "Email",
+      "role": "Роль",
+      "department": "Отдел",
+      "tasks": "Задачи",
+      "status": "Статус",
+      "actions": "Действия",
+      "tabel": "Табельный №"
+    },
+    "tasks": {
+      "activeShort": "А",
+      "activeFull": "Активных задач",
+      "completedShort": "З",
+      "completedFull": "Завершённых задач",
+      "createdShort": "С",
+      "createdFull": "Созданных задач"
+    },
+    "status": {
+      "active": "Активен",
+      "inactive": "Отключён"
+    },
+    "delete": {
+      "title": "Удалить пользователя",
+      "body": "Пользователь «{{name}}» будет отключён. Продолжить?",
+      "confirm": "Удалить"
+    },
+    "noAccess": {
+      "title": "Нет доступа",
+      "description": "Этот раздел доступен только администраторам."
+    },
+    "dialog": {
+      "createTitle": "Создать пользователя",
+      "editTitle": "Изменить пользователя",
+      "createSubtitle": "Добавьте нового пользователя в систему",
+      "editSubtitle": "Обновите данные, роль и статус пользователя",
+      "cancel": "Отмена",
+      "save": "Сохранить",
+      "create": "Создать",
+      "fields": {
+        "fullName": "Полное имя",
+        "email": "Email",
+        "username": "Логин",
+        "password": "Пароль",
+        "generate": "Сгенерировать пароль",
+        "passwordHint": "Минимум 8 символов",
+        "role": "Роль",
+        "department": "Отдел",
+        "noDepartment": "— без отдела —",
+        "position": "Должность",
+        "optional": "(необязательно)",
+        "active": "Активен",
+        "activeHint": "Отключённый пользователь не может входить в систему",
+        "tabel": "Табельный №"
+      },
+      "errors": {
+        "nameRequired": "Укажите имя пользователя",
+        "emailInvalid": "Укажите корректный email",
+        "usernameRequired": "Укажите логин",
+        "passwordShort": "Пароль должен быть не короче 8 символов"
+      }
+    }
+  },
+  "mobileNav": {
+    "aria": "Мобильная навигация"
+  },
+  "kanban": {
+    "columnAria": "Колонка {{title}}, заявок: {{count}}",
+    "empty": "Пусто"
+  },
+  "actions": {
+    "newRequest": "Новый запрос",
+    "sort": "Сортировка",
+    "filter": "Фильтры",
+    "myTickets": "Мои заявки",
+    "export": "Экспорт"
+  },
+  "filters": {
+    "title": "Фильтры",
+    "close": "Закрыть фильтры",
+    "reset": "Сбросить",
+    "statusLabel": "Статус",
+    "priorityLabel": "Приоритет",
+    "categoryLabel": "Категория",
+    "urgentOnly": "Только срочные",
+    "mineOnly": "Мои заявки",
+    "activeCount": "Активно: {{count}}",
+    "categoriesEmpty": "Нет категорий",
+    "categoriesError": "Не удалось загрузить категории",
+    "status": {
+      "draft": "Черновик",
+      "pending_approval": "На согласовании",
+      "rejected": "Отклонена",
+      "approved": "Согласована",
+      "assigned": "Назначена",
+      "in_progress": "В работе",
+      "waiting_info": "Ожидает информации",
+      "completed": "Выполнена",
+      "closed": "Закрыта"
+    },
+    "priority": {
+      "low": "Низкий",
+      "normal": "Обычный",
+      "high": "Высокий",
+      "urgent": "Срочный"
+    },
+    "departmentLabel": "Отдел",
+    "departmentSearch": "Поиск отдела…",
+    "departmentsEmpty": "Нет отделов"
+  },
+  "sort": {
+    "title": "Сортировка",
+    "newest": "Новые сначала",
+    "oldest": "Старые сначала",
+    "priority": "По приоритету",
+    "progress": "По прогрессу"
+  },
+  "presets": {
+    "aria": "Быстрые фильтры",
+    "all": "Все",
+    "mine": "Мои",
+    "urgent": "Срочные",
+    "overdue": "Просроченные",
+    "unassigned": "Не назначены"
+  },
+  "export": {
+    "aria": "Экспорт в CSV",
+    "col": {
+      "number": "Номер",
+      "title": "Заголовок",
+      "status": "Статус",
+      "priority": "Приоритет",
+      "progress": "Прогресс %",
+      "creator": "Создал",
+      "date": "Дата"
+    }
+  },
+  "topStrip": {
+    "channel": "Канал · LIVE",
+    "queue": "Очередь"
+  },
+  "headings": {
+    "operations": "Operations · Дашборд",
+    "ticketQueue": "Очередь заявок"
+  },
+  "stats": {
+    "new": "Новые",
+    "newHint": "ожидают",
+    "inProgress": "В работе",
+    "inProgressHint": "активные",
+    "completed": "Выполнено",
+    "completedHint": "{{rate}}% результативность",
+    "queueTotal": "Всего в очереди",
+    "queueTotalHint": "все заявки"
+  },
+  "kanbanCols": {
+    "title": "Канбан заявок",
+    "new": "Новые",
+    "assigned": "Назначенные",
+    "inProgress": "В процессе",
+    "completed": "Выполненные",
+    "closed": "Закрытые"
+  },
+  "list": {
+    "aria": "Список заявок",
+    "noTickets": "В очереди нет заявок",
+    "noMatches": "Ничего не найдено",
+    "tryFilters": "Измените поиск или фильтры"
+  },
+  "loading": {
+    "tickets": "Загрузка заявок",
+    "queue": "Загрузка очереди…"
+  },
+  "search": {
+    "placeholder": "Поиск заявок · номер, заголовок, описание",
+    "aria": "Поиск и действия"
+  },
+  "errors": {
+    "retry": "Повторить загрузку заявок"
+  },
+  "admin": {
+    "allTicketsBadge": "Режим администратора",
+    "allTicketsHint": "Видны заявки всех отделов"
+  }
+}

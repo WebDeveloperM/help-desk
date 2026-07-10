@@ -1,0 +1,19 @@
+# Force LF line endings for files that must run on Linux containers,
+# regardless of the developer's git core.autocrlf setting.
+# Windows-style CRLF in entrypoint scripts breaks bash parsing
+# (e.g. `\r` makes `start` look like the unknown command `start\r`).
+
+*.sh           text eol=lf
+Dockerfile     text eol=lf
+*.dockerfile   text eol=lf
+entrypoint.sh  text eol=lf
+
+# Keep YAML/conf served to Linux services LF too — nginx, compose, etc.
+*.yml          text eol=lf
+*.yaml         text eol=lf
+nginx/*.conf   text eol=lf
+
+# Lockfiles: pin LF so cross-platform diffs stay clean.
+poetry.lock    text eol=lf
+bun.lock       text eol=lf
+package-lock.json text eol=lf

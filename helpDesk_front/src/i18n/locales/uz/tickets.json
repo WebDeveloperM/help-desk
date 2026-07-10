@@ -1,0 +1,203 @@
+{
+  "status": {
+    "draft": "Qoralama",
+    "pending_approval": "Tasdiqlash kutilmoqda",
+    "approved": "Tasdiqlangan",
+    "assigned": "Tayinlangan",
+    "in_progress": "Jarayonda",
+    "waiting_info": "Ma'lumot kutilmoqda",
+    "completed": "Bajarildi",
+    "closed": "Yopilgan",
+    "rejected": "Rad etilgan"
+  },
+  "priority": {
+    "low": "Past",
+    "normal": "O'rtacha",
+    "high": "Yuqori",
+    "urgent": "Shoshilinch"
+  },
+  "asset": {
+    "laptop": "Noutbuk",
+    "equipment": "Uskuna",
+    "component": "Komponent"
+  },
+  "progress": {
+    "aria": "Bajarilish jarayoni {{value}}%"
+  },
+  "shortStatus": {
+    "draft": "QORALAMA",
+    "pending_approval": "TASDIQ.",
+    "approved": "TASDIQ.",
+    "assigned": "TAYINL.",
+    "in_progress": "JARAYON",
+    "waiting_info": "KUTM.",
+    "completed": "BAJAR.",
+    "closed": "YOPIQ",
+    "rejected": "RAD ET."
+  },
+  "shortPriority": {
+    "low": "PAST",
+    "normal": "O'RT.",
+    "high": "YUQ.",
+    "urgent": "SHOSH."
+  },
+  "sla": {
+    "onTrack": "SLA doirasida",
+    "atRisk": "SLA xavf ostida",
+    "overdue": "SLA muddati o'tgan",
+    "completedOnTime": "Muddatida yopildi",
+    "completedLate": "Kechikib yopildi",
+    "short": {
+      "onTrack": "MUDDATDA",
+      "atRisk": "XAVF",
+      "overdue": "O'TGAN",
+      "completedOnTime": "VAQTIDA",
+      "completedLate": "KECHIKDI"
+    }
+  },
+  "card": {
+    "aria": "Ariza {{number}}: {{title}}",
+    "urgentBadge": "SHOSH"
+  },
+  "form": {
+    "title": "Yangi ariza yaratish",
+    "subtitle": "Yangi ariza yaratish uchun shaklni to'ldiring. Barcha maydonlar majburiy.",
+    "formAria": "Ariza yaratish shakli",
+    "success": {
+      "created": "Ariza muvaffaqiyatli yaratildi!",
+      "refresh": "Arizalar ro'yxati avtomatik yangilanadi."
+    },
+    "labels": {
+      "title": "Ariza nomi",
+      "description": "Tavsif",
+      "priority": "Muhimlik darajasi",
+      "department": "Ijrochilar bo'limi",
+      "category": "Toifa",
+      "executors": "Ijrochilar",
+      "desiredCompletion": "Istalgan tugatish sanasi",
+      "markUrgent": "Shoshilinch ariza deb belgilash"
+    },
+    "placeholders": {
+      "title": "Ariza nomini kiriting",
+      "description": "Ariza tafsilotlarini yozing",
+      "priority": "Muhimlikni tanlang",
+      "department": "Bo'limni tanlang",
+      "category": "Toifani tanlang"
+    },
+    "yourDepartment": "Sizning bo'limingiz",
+    "yourDepartmentNamed": "Sizning bo'limingiz — {{name}}",
+    "help": {
+      "executorOnly": "Tayinlash faqat tanlangan bo'lim hamkasblariga mavjud",
+      "selectDepartment": "Ijrochilar ro'yxatini yuklash uchun bo'limni tanlang",
+      "categoryLoading": "Toifalar yuklanmoqda…",
+      "noCategories": "Mavjud toifalar yo'q. Administrator bilan bog'laning.",
+      "selectCategory": "Ariza toifasini tanlang",
+      "executorsHelp": "Tanlangan bo'limdan bir yoki bir nechta ijrochini tanlang"
+    },
+    "executors": {
+      "loading": "Bo'lim xodimlari ro'yxati yuklanmoqda…",
+      "noUsers": "Tanlangan bo'limda foydalanuvchilar yo'q. Administrator bilan bog'laning.",
+      "assignAria": "{{name}}ni tayinlash"
+    },
+    "actions": {
+      "create": "Ariza yaratish"
+    },
+    "errors": {
+      "noToken": "Avtorizatsiya tokeni mavjud emas",
+      "noDepartment": "Bo'limni tanlang yoki bo'limga biriktirish uchun administrator bilan bog'laning."
+    },
+    "validation": {
+      "titleMin": "Ariza nomi kamida 3 ta belgidan iborat bo'lishi kerak",
+      "titleMax": "Ariza nomi 200 ta belgidan oshmasligi kerak",
+      "descMin": "Tavsif kamida 10 ta belgidan iborat bo'lishi kerak",
+      "descMax": "Tavsif 2000 ta belgidan oshmasligi kerak",
+      "priorityRequired": "Muhimlik darajasini tanlang",
+      "departmentRequired": "Bo'limni tanlang",
+      "categoryRequired": "Toifani tanlang",
+      "executorsRequired": "Kamida bitta ijrochini tanlang"
+    }
+  },
+  "detail": {
+    "back": "Boshqaruv paneliga qaytish",
+    "mainAria": "Ariza tafsilotlari",
+    "loadingAria": "Ariza yuklanmoqda",
+    "loading": "Ariza yuklanmoqda...",
+    "noTicketId": "Ariza identifikatori ko'rsatilmagan",
+    "retry": "Qayta urinish",
+    "retryAria": "Qaytadan yuklash",
+    "notFound": "Ariza topilmadi",
+    "urgent": "SHOSHILINCH",
+    "implementation": "Bajarilish darajasi",
+    "progressAria": "Jarayon: {{value}}%",
+    "actionsAria": "Ariza bo'yicha amallar",
+    "sections": {
+      "description": "Tavsif",
+      "commentsHistory": "Izohlar va tarix",
+      "approverComment": "Tasdiqlovchi izohi",
+      "completionComment": "Yakunlashdagi izoh",
+      "closedComment": "Yopilishdagi izoh",
+      "noComments": "Hali izohlar yo'q",
+      "dates": "Sanalar",
+      "desiredCompletion": "Istalgan tugatish sanasi",
+      "plannedSla": "SLA bo'yicha rejali sana",
+      "slaStatus": "SLA holati",
+      "actualCompletion": "Haqiqiy tugatish sanasi",
+      "createdAt": "Yaratilgan",
+      "updatedAt": "Yangilangan",
+      "participants": "Ishtirokchilar",
+      "creator": "Yaratuvchi",
+      "assignedDepartment": "Tayinlangan bo'lim",
+      "approver": "Tasdiqlovchi",
+      "completedBy": "Yakunladi",
+      "executors": "Ijrochilar",
+      "additionalInfo": "Qo'shimcha ma'lumot",
+      "updateProgress": "Jarayonni yangilash",
+      "updateProgressDesc": "Vazifaning joriy bajarilish darajasini ko'rsating",
+      "saveProgress": "Jarayonni saqlash",
+      "saving": "Saqlanmoqda...",
+      "progressInputAria": "Ariza bajarilishining foizi"
+    }
+  },
+  "actions": {
+    "approve": "Tasdiqlash",
+    "approveAria": "Arizani tasdiqlash",
+    "reject": "Rad etish",
+    "rejectAria": "Arizani rad etish",
+    "assign": "Tayinlash",
+    "assignAria": "Arizani tayinlash",
+    "startWork": "Ishni boshlash",
+    "resumeWork": "Ishni davom ettirish",
+    "waitingInfo": "Ma'lumot kutilmoqda",
+    "complete": "Yakunlash",
+    "completeAria": "Arizani yakunlash",
+    "close": "Yopish",
+    "closeAria": "Arizani yopish"
+  },
+  "workflow": {
+    "modals": {
+      "approveTitle": "Arizani tasdiqlash",
+      "approveDesc": "Kerak bo'lsa izoh qo'shing",
+      "rejectTitle": "Arizani rad etish",
+      "rejectDesc": "Rad etish sababini ko'rsating (majburiy)",
+      "rejectReasonLabel": "Rad etish sababi",
+      "rejectReasonPlaceholder": "Sababni kiriting",
+      "assignTitle": "Arizani tayinlash",
+      "assignDesc": "Bo'lim va ijrochilarni tanlang",
+      "assignDepartmentLabel": "Bo'lim",
+      "assignExecutorsLabel": "Ijrochilar",
+      "assignExecutorAria": "{{name}}ni tanlash",
+      "creatorDeptFallback": "Ariza muallifi bo'limi",
+      "completeTitle": "Arizani yakunlash",
+      "completeDesc": "Kerak bo'lsa izoh qo'shing",
+      "closeTitle": "Arizani yopish",
+      "closeDesc": "Kerak bo'lsa izoh qo'shing",
+      "commentLabel": "Izoh",
+      "commentOptionalPlaceholder": "Ixtiyoriy"
+    },
+    "errors": {
+      "rejectReasonRequired": "Rad etish sababini ko'rsating",
+      "departmentNotFound": "Ariza bo'limini aniqlab bo'lmadi",
+      "selectAtLeastOneExecutor": "Kamida bitta ijrochini tanlang"
+    }
+  }
+}

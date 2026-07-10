@@ -1,0 +1,155 @@
+# ==============================================
+# HelpDesk — Локальная разработка (локальная сеть)
+# ==============================================
+# Перед первым запуском: cp .env.local.example .env.local (задайте JWT_SECRET и BOOTSTRAP_ADMIN_*)
+# Запуск: docker compose --env-file .env.local up -d
+# Приложение: http://localhost или http://<IP этой машины> с других ПК в сети
+# Связка портов: nginx слушает 80 → раздаёт статику фронта и проксирует /api/ на backend:8000.
+# Авторизация: локальный логин username+пароль (без Keycloak). Первый админ — из BOOTSTRAP_ADMIN_* при старте.
+# Для продакшена: docker compose -f docker-compose.prod.yml --env-file .env.prod up -d
+# ==============================================
+
+services:
+  # ======================
+  # NGINX - Reverse Proxy (HTTP only, доступ из локальной сети)
+  # ======================
+  nginx:
+    image: nginx:alpine
+    container_name: helpdesk-nginx
+    ports:
+      - "80:80"
+      # bnpzID redirect URIs are registered on port 6060 (http://<host>:6060/auth/callback).
+      - "6060:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - frontend_static:/usr/share/nginx/html:ro
+    depends_on:
+      frontend:
+        condition: service_completed_successfully
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - helpdesk-network
+
+  # ======================
+  # FRONTEND - React App (одноразовая задача: сборка + копирование в volume)
+  # ======================
+  # Контейнер завершается после копирования; nginx ждёт condition: service_completed_successfully
+  frontend:
+    build:
+      context: ./helpDesk_front
+      dockerfile: Dockerfile
+      target: runner
+      args:
+        - VITE_API_URL=${VITE_API_URL:-/api/v1}
+        - VITE_BNPZID_ENABLED=${VITE_BNPZID_ENABLED:-false}
+    container_name: helpdesk-frontend-builder
+    volumes:
+      - frontend_static:/app/dist
+    restart: "no"
+    networks:
+      - helpdesk-network
+
+  # ======================
+  # BACKEND - FastAPI
+  # ======================
+  backend:
+    build:
+      context: ./helpDesk_back
+      dockerfile: Dockerfile
+    container_name: helpdesk-backend
+    expose:
+      - "8000"
+    env_file:
+      - .env.local
+    depends_on:
+      db:
+        condition: service_healthy
+      minio:
+        condition: service_started
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:8000/health').read()",
+        ]
+      interval: 30s
+      timeout: 10s
+      start_period: 10s
+      retries: 3
+    restart: unless-stopped
+    networks:
+      - helpdesk-network
+
+  # ======================
+  # DATABASE - PostgreSQL
+  # ======================
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: helpdesk-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: helpdesk
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    expose:
+      - "5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - helpdesk-network
+
+  # ======================
+  # OBJECT STORAGE - MinIO
+  # ======================
+  minio:
+    image: minio/minio:latest
+    container_name: helpdesk-minio
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-minioadmin}
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "curl -fsS http://localhost:9000/minio/health/live || exit 1",
+        ]
+      interval: 20s
+      timeout: 10s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - helpdesk-network
+
+# ======================
+# VOLUMES
+# ======================
+volumes:
+  postgres_data:
+    name: helpdesk_postgres_data
+  minio_data:
+    name: helpdesk_minio_data
+  frontend_static:
+    name: helpdesk_frontend_static
+
+# ======================
+# NETWORKS
+# ======================
+networks:
+  helpdesk-network:
+    name: helpdesk-network
+    driver: bridge

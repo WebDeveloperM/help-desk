@@ -1,0 +1,70 @@
+{
+  "page": {
+    "title": "Hisobotlar",
+    "description": "Arizalar bo'yicha tahlil va statistika",
+    "aria": "Hisobotlar sahifasi"
+  },
+  "actions": {
+    "exportCsv": "CSV eksport",
+    "exportCsvAria": "Hisobotni CSV formatida eksport qilish",
+    "print": "Chop etish",
+    "printAria": "Hisobotni chop etish"
+  },
+  "state": {
+    "loading": "Tahlil yuklanmoqda…",
+    "errorTitle": "Tahlilni yuklab bo'lmadi",
+    "retry": "Qayta urinish",
+    "emptyTitle": "Hozircha ma'lumot yo'q",
+    "emptyDescription": "Tizimda arizalar paydo bo'lishi bilan tahlil ko'rinadi."
+  },
+  "metric": {
+    "metric": "Ko'rsatkich",
+    "value": "Qiymat"
+  },
+  "unit": {
+    "hours": "s"
+  },
+  "kpi": {
+    "region": "Asosiy ko'rsatkichlar",
+    "total": "Jami arizalar",
+    "open": "Ochiq",
+    "inProgress": "Jarayonda",
+    "completed": "Bajarilgan",
+    "closed": "Yopilgan",
+    "overdue": "Muddati o'tgan",
+    "urgentOpen": "Shoshilinch (jarayonda)",
+    "avgResolution": "O'rtacha hal qilish vaqti",
+    "slaCompliance": "SLA bajarilishi",
+    "createdLast7d": "7 kunda yaratilgan",
+    "completedLast7d": "7 kunda bajarilgan",
+    "createdLast7dHint": "7 kunda +{{count}}",
+    "completedLast7dHint": "7 kunda +{{count}}"
+  },
+  "charts": {
+    "byStatus": "Holat bo'yicha arizalar",
+    "byPriority": "Muhimlik bo'yicha arizalar",
+    "byCategory": "Eng ko'p toifalar",
+    "throughput": "14 kunlik dinamika",
+    "throughputDescription": "Kun bo'yicha yaratilgan va bajarilgan arizalar",
+    "created": "Yaratilgan",
+    "completed": "Bajarilgan",
+    "noData": "Ma'lumot yo'q"
+  },
+  "statuses": {
+    "draft": "Qoralama",
+    "pending_approval": "Tasdiqlashda",
+    "rejected": "Rad etilgan",
+    "approved": "Tasdiqlangan",
+    "assigned": "Tayinlangan",
+    "in_progress": "Jarayonda",
+    "waiting_info": "Ma'lumot kutilmoqda",
+    "completed": "Bajarilgan",
+    "closed": "Yopilgan"
+  },
+  "priorities": {
+    "low": "Past",
+    "normal": "Oddiy",
+    "high": "Yuqori",
+    "urgent": "Shoshilinch"
+  }
+}

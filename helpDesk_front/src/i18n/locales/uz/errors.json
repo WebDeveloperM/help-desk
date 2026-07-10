@@ -1,0 +1,78 @@
+{
+  "codes": {
+    "ticket": {
+      "not_found": "Ariza topilmadi",
+      "already_exists": "«{{ticket_number}}» raqamli ariza allaqachon mavjud",
+      "permission_denied": "Bu ariza ustida amal bajarish uchun ruxsatingiz yo'q",
+      "validation_failed": "Ariza ma'lumotlarini tekshirib bo'lmadi",
+      "invalid_status_transition": "Holatni «{{current_status}}»dan «{{target_status}}»ga o'zgartirib bo'lmaydi"
+    },
+    "department": {
+      "not_found": "Bo'lim topilmadi",
+      "already_exists": "«{{code}}» kodli bo'lim allaqachon mavjud"
+    },
+    "notification": {
+      "not_found": "Bildirishnoma topilmadi",
+      "permission_denied": "Ushbu bildirishnomaga ruxsatingiz yo'q"
+    },
+    "user": {
+      "not_found": "Foydalanuvchi topilmadi",
+      "already_exists": "{{field}} «{{value}}» bo'lgan foydalanuvchi allaqachon mavjud",
+      "permission_denied": "Bu amalni bajarish uchun ruxsatingiz yo'q",
+      "validation_failed": "Foydalanuvchi ma'lumotlarini tekshirib bo'lmadi",
+      "inactive": "Foydalanuvchi hisobi faol emas",
+      "keycloak_sync_failed": "Foydalanuvchini Keycloak bilan sinxronlashda xato"
+    },
+    "auth": {
+      "authentication_failed": "Autentifikatsiya muvaffaqiyatsiz tugadi",
+      "authorization_failed": "Ruxsat yetarli emas",
+      "invalid_token": "Token noto'g'ri yoki muddati o'tgan"
+    }
+  },
+  "session_expired": "Sessiya muddati o'tgan yoki ruxsat yo'q",
+  "network_aborted": "So'rov bekor qilindi",
+  "network_unreachable": "Server bilan bog'lanib bo'lmadi. Aloqa va API manzilini tekshiring.",
+  "no_access": "Ruxsat yo'q",
+  "invalid_data": "Noto'g'ri ma'lumotlar",
+  "tickets": {
+    "not_found": "Ariza topilmadi",
+    "no_access_one": "Ushbu arizaga ruxsat yo'q",
+    "no_access_all": "Arizalarga ruxsat yo'q. Balki siz bo'limga biriktirilmagan bo'lishingiz mumkin.",
+    "create_no_access": "Ruxsat yo'q. Siz faqat o'z bo'limingiz uchun ariza yaratishingiz mumkin.",
+    "create_invalid_data": "Noto'g'ri ma'lumotlar. Maydonlarni tekshiring.",
+    "malformed_format": "Ariza formati noto'g'ri",
+    "load": "Arizalarni yuklashda xatolik",
+    "load_one": "Arizani yuklashda xatolik",
+    "create": "Ariza yaratishda xatolik",
+    "operation": "Operatsiya xatosi"
+  },
+  "categories": {
+    "load": "Toifalarni yuklashda xatolik"
+  },
+  "departments": {
+    "load": "Bo'limlarni yuklashda xatolik",
+    "users_no_access": "Bo'lim foydalanuvchilari ro'yxatiga ruxsat yo'q",
+    "load_users": "Bo'lim foydalanuvchilarini yuklashda xatolik",
+    "create_forbidden": "Bo'lim yaratishga ruxsat yo'q",
+    "update_forbidden": "Bo'limni o'zgartirishga ruxsat yo'q",
+    "delete_forbidden": "Bo'limni o'chirishga ruxsat yo'q",
+    "code_taken": "Bunday kodli bo'lim allaqachon mavjud",
+    "not_found": "Bo'lim topilmadi",
+    "create_failed": "Bo'lim yaratib bo'lmadi",
+    "update_failed": "O'zgarishlarni saqlab bo'lmadi",
+    "delete_failed": "Bo'limni o'chirib bo'lmadi"
+  },
+  "users": {
+    "load_profile": "Profilni olib bo'lmadi",
+    "load_list": "Foydalanuvchilarni yuklashda xato",
+    "list_forbidden": "Foydalanuvchilarni ko'rishga ruxsat yo'q",
+    "create_forbidden": "Foydalanuvchi yaratishga ruxsat yo'q",
+    "update_forbidden": "Foydalanuvchini o'zgartirishga ruxsat yo'q",
+    "not_found": "Foydalanuvchi topilmadi",
+    "email_taken": "Bunday email bilan foydalanuvchi allaqachon mavjud",
+    "keycloak_sync_failed": "Foydalanuvchini Keycloak'da yaratib bo'lmadi",
+    "create_failed": "Foydalanuvchi yaratib bo'lmadi",
+    "update_failed": "O'zgarishlarni saqlab bo'lmadi",
+    "reset_password_failed": "Parolni tiklab bo'lmadi"
+  }
+}

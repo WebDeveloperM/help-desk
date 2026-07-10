@@ -1,0 +1,238 @@
+{
+  "nav": {
+    "dashboard": "Boshqaruv paneli",
+    "departments": "Bo'limlar",
+    "users": "Foydalanuvchilar",
+    "reports": "Hisobotlar",
+    "settings": "Sozlamalar",
+    "navigationLabel": "Asosiy navigatsiya",
+    "navigationHeading": "Navigatsiya",
+    "short": {
+      "dashboard": "Lenta",
+      "departments": "Bo'lim",
+      "reports": "Hisobot",
+      "settings": "Sozlash"
+    }
+  },
+  "users": {
+    "page": {
+      "aria": "Foydalanuvchilarni boshqarish",
+      "title": "Foydalanuvchilar",
+      "description": "Barcha foydalanuvchilar, ularning rollari, bo'limlari va vazifalar bo'yicha faolligi"
+    },
+    "actions": {
+      "create": "Foydalanuvchi yaratish",
+      "editAria": "{{name}} ni tahrirlash",
+      "resetPasswordAria": "{{name}} parolini tiklash",
+      "deleteAria": "{{name}} ni o'chirish"
+    },
+    "filters": {
+      "searchPlaceholder": "Ism, login yoki email bo'yicha qidirish",
+      "searchAria": "Foydalanuvchilarni qidirish",
+      "roleAria": "Rol bo'yicha filtr",
+      "departmentAria": "Bo'lim bo'yicha filtr",
+      "allRoles": "Barcha rollar",
+      "allDepartments": "Barcha bo'limlar",
+      "activeOnly": "Faqat faollar"
+    },
+    "roles": {
+      "user": "Xodim",
+      "executor": "Ijrochi",
+      "department_head": "Bo'lim rahbari",
+      "admin": "Administrator"
+    },
+    "state": {
+      "loading": "Foydalanuvchilar yuklanmoqda…",
+      "errorTitle": "Foydalanuvchilarni yuklab bo'lmadi",
+      "retry": "Qayta urinish",
+      "emptyTitle": "Hozircha foydalanuvchilar yo'q",
+      "emptyDescription": "Ishni boshlash uchun birinchi foydalanuvchini yarating.",
+      "noMatchesTitle": "Hech narsa topilmadi",
+      "noMatchesDescription": "Qidiruv yoki filtrlarni o'zgartiring."
+    },
+    "table": {
+      "aria": "Foydalanuvchilar jadvali",
+      "user": "Foydalanuvchi",
+      "email": "Email",
+      "role": "Rol",
+      "department": "Bo'lim",
+      "tasks": "Vazifalar",
+      "status": "Holat",
+      "actions": "Amallar",
+      "tabel": "Tabel raqami"
+    },
+    "tasks": {
+      "activeShort": "F",
+      "activeFull": "Faol vazifalar",
+      "completedShort": "B",
+      "completedFull": "Bajarilgan vazifalar",
+      "createdShort": "Y",
+      "createdFull": "Yaratilgan vazifalar"
+    },
+    "status": {
+      "active": "Faol",
+      "inactive": "O'chirilgan"
+    },
+    "delete": {
+      "title": "Foydalanuvchini o'chirish",
+      "body": "«{{name}}» foydalanuvchisi o'chiriladi. Davom etilsinmi?",
+      "confirm": "O'chirish"
+    },
+    "noAccess": {
+      "title": "Ruxsat yo'q",
+      "description": "Bu bo'lim faqat administratorlar uchun."
+    },
+    "dialog": {
+      "createTitle": "Foydalanuvchi yaratish",
+      "editTitle": "Foydalanuvchini tahrirlash",
+      "createSubtitle": "Tizimga yangi foydalanuvchi qo'shing",
+      "editSubtitle": "Foydalanuvchi ma'lumotlari, roli va holatini yangilang",
+      "cancel": "Bekor qilish",
+      "save": "Saqlash",
+      "create": "Yaratish",
+      "fields": {
+        "fullName": "To'liq ism",
+        "email": "Email",
+        "username": "Login",
+        "password": "Parol",
+        "generate": "Parol generatsiya qilish",
+        "passwordHint": "Kamida 8 ta belgi",
+        "role": "Rol",
+        "department": "Bo'lim",
+        "noDepartment": "— bo'limsiz —",
+        "position": "Lavozim",
+        "optional": "(ixtiyoriy)",
+        "active": "Faol",
+        "activeHint": "O'chirilgan foydalanuvchi tizimga kira olmaydi",
+        "tabel": "Tabel raqami"
+      },
+      "errors": {
+        "nameRequired": "Foydalanuvchi ismini kiriting",
+        "emailInvalid": "To'g'ri email kiriting",
+        "usernameRequired": "Login kiriting",
+        "passwordShort": "Parol kamida 8 ta belgidan iborat bo'lishi kerak"
+      }
+    }
+  },
+  "mobileNav": {
+    "aria": "Mobil navigatsiya"
+  },
+  "kanban": {
+    "columnAria": "{{title}} ustuni, arizalar: {{count}}",
+    "empty": "Bo'sh"
+  },
+  "actions": {
+    "newRequest": "Yangi ariza",
+    "sort": "Saralash",
+    "filter": "Filtrlar",
+    "myTickets": "Mening arizalarim",
+    "export": "Eksport"
+  },
+  "filters": {
+    "title": "Filtrlar",
+    "close": "Filtrlarni yopish",
+    "reset": "Tozalash",
+    "statusLabel": "Holat",
+    "priorityLabel": "Muhimlik",
+    "categoryLabel": "Turkum",
+    "urgentOnly": "Faqat shoshilinch",
+    "mineOnly": "Mening arizalarim",
+    "activeCount": "Faol: {{count}}",
+    "categoriesEmpty": "Turkumlar yo'q",
+    "categoriesError": "Turkumlarni yuklab bo'lmadi",
+    "status": {
+      "draft": "Qoralama",
+      "pending_approval": "Kelishilmoqda",
+      "rejected": "Rad etilgan",
+      "approved": "Kelishilgan",
+      "assigned": "Tayinlangan",
+      "in_progress": "Jarayonda",
+      "waiting_info": "Ma'lumot kutilmoqda",
+      "completed": "Bajarilgan",
+      "closed": "Yopilgan"
+    },
+    "priority": {
+      "low": "Past",
+      "normal": "Oddiy",
+      "high": "Yuqori",
+      "urgent": "Shoshilinch"
+    },
+    "departmentLabel": "Bo'lim",
+    "departmentSearch": "Bo'lim qidirish…",
+    "departmentsEmpty": "Bo'limlar yo'q"
+  },
+  "sort": {
+    "title": "Saralash",
+    "newest": "Avval yangilari",
+    "oldest": "Avval eskilari",
+    "priority": "Muhimlik bo'yicha",
+    "progress": "Jarayon bo'yicha"
+  },
+  "presets": {
+    "aria": "Tezkor filtrlar",
+    "all": "Barchasi",
+    "mine": "Mening",
+    "urgent": "Shoshilinch",
+    "overdue": "Muddati o'tgan",
+    "unassigned": "Tayinlanmagan"
+  },
+  "export": {
+    "aria": "CSV ga eksport",
+    "col": {
+      "number": "Raqam",
+      "title": "Sarlavha",
+      "status": "Holat",
+      "priority": "Muhimlik",
+      "progress": "Jarayon %",
+      "creator": "Yaratdi",
+      "date": "Sana"
+    }
+  },
+  "topStrip": {
+    "channel": "Kanal · LIVE",
+    "queue": "Navbat"
+  },
+  "headings": {
+    "operations": "Operations · Boshqaruv paneli",
+    "ticketQueue": "Arizalar navbati"
+  },
+  "stats": {
+    "new": "Yangi",
+    "newHint": "kutilmoqda",
+    "inProgress": "Jarayonda",
+    "inProgressHint": "faol",
+    "completed": "Bajarildi",
+    "completedHint": "{{rate}}% samaradorlik",
+    "queueTotal": "Navbatdagi jami",
+    "queueTotalHint": "barcha arizalar"
+  },
+  "kanbanCols": {
+    "title": "Arizalar kanbani",
+    "new": "Yangi",
+    "assigned": "Tayinlangan",
+    "inProgress": "Jarayonda",
+    "completed": "Bajarilgan",
+    "closed": "Yopilgan"
+  },
+  "list": {
+    "aria": "Arizalar ro'yxati",
+    "noTickets": "Navbatda arizalar yo'q",
+    "noMatches": "Hech narsa topilmadi",
+    "tryFilters": "Qidiruv yoki filtrlarni o'zgartiring"
+  },
+  "loading": {
+    "tickets": "Arizalar yuklanmoqda",
+    "queue": "Navbat yuklanmoqda…"
+  },
+  "search": {
+    "placeholder": "Arizalarni qidirish · raqam, sarlavha, tavsif",
+    "aria": "Qidiruv va amallar"
+  },
+  "errors": {
+    "retry": "Arizalarni qaytadan yuklash"
+  },
+  "admin": {
+    "allTicketsBadge": "Administrator rejimi",
+    "allTicketsHint": "Barcha bo'limlar arizalari"
+  }
+}

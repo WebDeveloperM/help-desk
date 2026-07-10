@@ -1,0 +1,52 @@
+{
+  "brand": {
+    "short": "Buxoro NQIZ",
+    "full": "Buxoro neftni qayta ishlash zavodi",
+    "product": "HelpDesk",
+    "subtitle": "Operatsion konsol"
+  },
+  "language": {
+    "label": "Til",
+    "switchAria": "Interfeys tilini tanlash",
+    "current": "Joriy til: {{name}}"
+  },
+  "actions": {
+    "retry": "Qayta urinish",
+    "cancel": "Bekor qilish",
+    "save": "Saqlash",
+    "create": "Yaratish",
+    "delete": "O'chirish",
+    "edit": "Tahrirlash",
+    "close": "Yopish",
+    "confirm": "Tasdiqlash",
+    "back": "Ortga",
+    "search": "Qidirish"
+  },
+  "states": {
+    "loading": "Yuklanmoqda…",
+    "empty": "Ma'lumot yo'q",
+    "error": "Xatolik yuz berdi",
+    "noToken": "Avtorizatsiya tokeni mavjud emas"
+  },
+  "formatters": {
+    "notSpecified": "Belgilanmagan"
+  },
+  "avatar": {
+    "online": "onlayn"
+  },
+  "notifications": {
+    "title": "Bildirishnomalar",
+    "ariaLabel": "Bildirishnomalar",
+    "ariaLabelCount": "Bildirishnomalar, o'qilmagan: {{count}}",
+    "markAllRead": "Barchasini o'qish",
+    "empty": "Bildirishnomalar yo'q",
+    "loading": "Yuklanmoqda…",
+    "loadError": "Bildirishnomalarni yuklab bo'lmadi",
+    "time": {
+      "justNow": "hozirgina",
+      "minutesAgo": "{{count}} daqiqa oldin",
+      "hoursAgo": "{{count}} soat oldin",
+      "daysAgo": "{{count}} kun oldin"
+    }
+  }
+}

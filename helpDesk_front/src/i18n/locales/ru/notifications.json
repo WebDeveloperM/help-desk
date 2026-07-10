@@ -1,0 +1,32 @@
+{
+  "type": {
+    "ticket_created": {
+      "title": "Создана заявка #{{ticket_number}}",
+      "body": "Новая заявка: «{{title}}»."
+    },
+    "ticket_approved": {
+      "title": "Заявка #{{ticket_number}} одобрена",
+      "body": "Заявка одобрена."
+    },
+    "ticket_rejected": {
+      "title": "Заявка #{{ticket_number}} отклонена",
+      "body": "Заявка была отклонена."
+    },
+    "ticket_assigned": {
+      "title": "Назначена новая задача: {{title}}",
+      "body": "Заявка #{{ticket_number}} назначена вам."
+    },
+    "ticket_completed": {
+      "title": "Заявка #{{ticket_number}} выполнена",
+      "body": "Заявка завершена."
+    },
+    "comment_added": {
+      "title": "Новый комментарий к заявке #{{ticket_number}}",
+      "body": "К заявке «{{title}}» добавлен комментарий."
+    },
+    "status_changed": {
+      "title": "Статус заявки #{{ticket_number}} изменён",
+      "body": "Новый статус: «{{status}}»."
+    }
+  }
+}

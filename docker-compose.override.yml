@@ -1,0 +1,7 @@
+# Local port remap: 80 and 6060 are already occupied by other projects on this machine.
+# This file is git-ignored-friendly (not tracked) and only affects local `docker compose up`.
+services:
+  nginx:
+    ports: !override
+      - "8080:80"
+      - "8090:80"

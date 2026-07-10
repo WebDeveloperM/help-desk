@@ -1,0 +1,52 @@
+{
+  "brand": {
+    "short": "Бухарский НПЗ",
+    "full": "Бухарский нефтеперерабатывающий завод",
+    "product": "HelpDesk",
+    "subtitle": "Operations Console"
+  },
+  "language": {
+    "label": "Язык",
+    "switchAria": "Выбрать язык интерфейса",
+    "current": "Текущий язык: {{name}}"
+  },
+  "actions": {
+    "retry": "Повторить",
+    "cancel": "Отмена",
+    "save": "Сохранить",
+    "create": "Создать",
+    "delete": "Удалить",
+    "edit": "Изменить",
+    "close": "Закрыть",
+    "confirm": "Подтвердить",
+    "back": "Назад",
+    "search": "Поиск"
+  },
+  "states": {
+    "loading": "Загрузка…",
+    "empty": "Нет данных",
+    "error": "Произошла ошибка",
+    "noToken": "Нет токена авторизации"
+  },
+  "formatters": {
+    "notSpecified": "Не указано"
+  },
+  "avatar": {
+    "online": "в сети"
+  },
+  "notifications": {
+    "title": "Уведомления",
+    "ariaLabel": "Уведомления",
+    "ariaLabelCount": "Уведомления, непрочитанных: {{count}}",
+    "markAllRead": "Прочитать все",
+    "empty": "Нет уведомлений",
+    "loading": "Загрузка…",
+    "loadError": "Не удалось загрузить уведомления",
+    "time": {
+      "justNow": "только что",
+      "minutesAgo": "{{count}} мин назад",
+      "hoursAgo": "{{count}} ч назад",
+      "daysAgo": "{{count}} дн назад"
+    }
+  }
+}
