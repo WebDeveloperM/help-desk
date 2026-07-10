@@ -4,7 +4,7 @@
 # Перед первым запуском: cp .env.local.example .env.local (задайте JWT_SECRET и BOOTSTRAP_ADMIN_*)
 # Запуск: docker compose --env-file .env.local up -d
 # Приложение: http://localhost или http://<IP этой машины> с других ПК в сети
-# Связка портов: nginx слушает 80 → раздаёт статику фронта и проксирует /api/ на backend:8000.
+# Связка портов: nginx слушает 8085 → раздаёт статику фронта и проксирует /api/ на backend:8000.
 # Авторизация: локальный логин username+пароль (без Keycloak). Первый админ — из BOOTSTRAP_ADMIN_* при старте.
 # Для продакшена: docker compose -f docker-compose.prod.yml --env-file .env.prod up -d
 # ==============================================
@@ -17,7 +17,7 @@ services:
     image: nginx:alpine
     container_name: helpdesk-nginx
     ports:
-      - "80:80"
+      - "8085:80"
       # bnpzID redirect URIs are registered on port 7000 (http://<host>:7000/auth/callback).
       - "7000:80"
     volumes:
@@ -118,8 +118,8 @@ services:
       MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minioadmin}
       MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-minioadmin}
     ports:
-      - "9000:9000"
-      - "9001:9001"
+      - "9010:9000"
+      - "9011:9001"
     volumes:
       - minio_data:/data
     healthcheck:
