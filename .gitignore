@@ -28,10 +28,6 @@ Thumbs.db
 # ======================
 # Environment Files
 # ======================
-.env
-.env.local
-.env.*.local
-.env.prod
 
 # ======================
 # Logs
