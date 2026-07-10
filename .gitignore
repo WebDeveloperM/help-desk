@@ -78,7 +78,6 @@ dmypy.json
 node_modules/
 dist/
 dist-ssr/
-*.local
 
 # Bun
 bun.lockb
@@ -113,6 +112,3 @@ nginx/well-known/pki-validation/*
 employee_service/
 
 # ======================
-# Project Specific
-# ======================
-# Env templates (.env.local.example, .env.prod.example) are kept in repo
